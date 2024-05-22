@@ -1,0 +1,33 @@
+[Unit]
+Description=BookKeeper
+Documentation=https://bookkeeper.apache.org
+Wants=network-online.target
+After=network-online.target
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/opt/training/apps/pulsar/bin/pulsar bookie
+WorkingDirectory=/opt/training/apps
+Restart=on-failure
+
+PrivateTmp=true
+
+User=pulsar
+Group=pulsar
+
+# Specifies the maximum file descriptor number that can be opened by this process
+LimitNOFILE=655350
+
+# Specifies the maximum number of processes
+LimitNPROC=4096
+
+# Specifies the maximum size of virtual memory
+LimitAS=infinity
+
+# Specifies the maximum file size
+LimitFSIZE=infinity
+
+
+[Install]
+WantedBy=multi-user.target
