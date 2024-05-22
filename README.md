@@ -1,6 +1,13 @@
 # Apache Pulsar playground
 
-- Just a playground to play around with Apache Pulsar. 
+- Just a playground to play around with Apache Pulsar.
+
+What's here:
+
+- Pulsar deployment in K8s via Helm charts (full setup including Grafana/Prometheus, Pulsar Manager UI and proxies)
+- Basic pub/sub model for Pulsar via Python client
+- Pulsar deployment in AWS via Terraform with Ansible
+- Pulsar Advanced demo to mimic a real-world setup
 
 ## Pulsar in a container
 
