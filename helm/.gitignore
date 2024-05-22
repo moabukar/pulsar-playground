@@ -1,0 +1,21 @@
+# Intellij
+.idea
+
+# Mac
+**/.DS_Store
+
+**/output
+**/~
+
+# charts
+.chart-packages/**
+.chart-index/**
+.vs/
+charts/**/*.tgz
+charts/**/*.lock
+
+PRIVATEKEY
+PUBLICKEY
+.vagrant/
+pulsarctl-*-*.tar.gz
+pulsarctl-*-*/
